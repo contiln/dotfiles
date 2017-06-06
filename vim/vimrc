@@ -1,0 +1,29 @@
+" Disable Vi compatibility
+set nocompatible
+
+" Adopt indent from previous line for new line
+set autoindent
+" Set text highlighting for a dark background
+set background=dark
+" Use spaces when <Tab> is inserted
+set expandtab
+" Highlight matches with last search pattern
+set hlsearch
+" Ignore case in search patterns
+set ignorecase
+" Highlight match while typing search pattern
+set incsearch
+" Do not insert two spaces after '.', '?', and '!' using 'join'
+set nojoinspaces
+" Report all the lines affected by a command
+set report=0
+" Round indent to multiple of 'shiftwidth'; applies to > and <
+set shiftround
+" Number of spaces used for (auto)indent operations
+set shiftwidth=3
+" Insert blanks according to 'shiftwidth' when a <Tab> is in front a line
+set smarttab
+" Number of spaces used for <Tab> in insert mode
+set softtabstop=3
+" Number of spaces a <Tab> counts for
+set tabstop=3

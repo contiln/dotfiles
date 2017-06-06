@@ -1,0 +1,35 @@
+# Determine if the shell is interactive
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# Ignore duplicate commands
+HISTCONTROL=ignoreboth
+
+# Keep the times of the commands in history
+HISTTIMEFORMAT='%F %T  '
+
+# Set the maximum lines of history allowed in memory
+HISTSIZE=4096
+
+# Set the maximum lines of history allowed in file
+HISTFILESIZE=32768
+
+# Append to history file
+shopt -s histappend
+
+# Update LINES and COLUMNS after each command, if necessary
+shopt -s checkwinsize
+
+# Enable vi-style line editing
+set -o vi
+
+# Customize the shell prompt
+PS1='\u@\h: \w $ '
+
+# Load supplementary configuration scripts
+for config in "$HOME"/.bashrc.d/*.bash ; do
+   source "$config"
+done
+unset -v config
