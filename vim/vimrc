@@ -27,3 +27,9 @@ set smarttab
 set softtabstop=3
 " Number of spaces a <Tab> counts for
 set tabstop=3
+
+" Tab rules per language
+autocmd Filetype css setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype json setlocal tabstop=2 shiftwidth=2 softtabstop=2
