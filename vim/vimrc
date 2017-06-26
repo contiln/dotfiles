@@ -1,6 +1,12 @@
 " Disable Vi compatibility
 set nocompatible
 
+" Enable syntax highlighting
+syntax enable
+
+" Configure colorscheme
+colorscheme dw_cyan
+
 " Adopt indent from previous line for new line
 set autoindent
 " Set text highlighting for a dark background
