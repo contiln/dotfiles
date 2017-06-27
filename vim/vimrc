@@ -23,10 +23,14 @@ set incsearch
 set nojoinspaces
 " Report all the lines affected by a command
 set report=0
+" Show the line and column number of the current position
+set ruler
 " Round indent to multiple of 'shiftwidth'; applies to > and <
 set shiftround
 " Number of spaces used for (auto)indent operations
 set shiftwidth=3
+" Display an incomplete command left of the ruler
+set showcmd
 " Insert blanks according to 'shiftwidth' when a <Tab> is in front a line
 set smarttab
 " Number of spaces used for <Tab> in insert mode
